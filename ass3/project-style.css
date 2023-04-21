@@ -1,0 +1,32 @@
+/* CHỨC NĂNG ẨN CÁC THÔNG TIN */
+
+/* tablet */
+@media only screen and (max-width: 768px) {
+  .md-wrap {
+    flex-wrap: wrap;
+  }
+  .fas,
+  .time-border {
+    width: 100%;
+  }
+  .time-num {
+    width: fit-content;
+    margin: auto 50%;
+  }
+  .goals,
+  .scopes,
+  .primary {
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  .team {
+    margin-left: 10px;
+  }
+  .timeline {
+    width: 100%;
+  }
+}
+/* TẠO KIỂU NÚT TRỞ VỀ PAGE CHÍNH */
+.homepage {
+  width: fit-content;
+}

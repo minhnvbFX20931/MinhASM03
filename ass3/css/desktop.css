@@ -1,0 +1,257 @@
+/*root*/
+:root {
+  --color-primary: rgb(4, 119, 233);
+}
+/*general css*/
+body {
+  height: 2000px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+/*section css*/
+section {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/*info*/
+
+#info {
+  background-color: wheat;
+  padding: 15px;
+}
+/*Ẩn thông tin user đến khi submit email*/
+#info .section-content {
+  display: none;
+}
+#target {
+  background-color: rgb(187, 178, 178);
+  padding: 15px;
+}
+section > * {
+  flex: 1;
+}
+.section--gap {
+  gap: 20px;
+}
+/* css error-email */
+#error-email {
+  color: red;
+  font-weight: 700;
+}
+.view-more {
+  display: none;
+}
+
+.section-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+.section-content .title {
+  font-weight: bold;
+}
+/* exp - bar*/
+.exp-bar {
+  width: 50px;
+  height: 2px;
+  background-color: grey;
+  display: inline-block;
+}
+/*css time line*/
+.timeline .title::before {
+  position: absolute;
+  content: "\2022";
+  font-size: 1.5em;
+  color: var(--color-primary);
+  top: -7px;
+  left: -5px;
+}
+
+.timeline .section-content {
+  position: relative;
+  padding-left: 15px;
+}
+
+.fill {
+  background-color: var(--color-primary);
+}
+
+/*header*/
+
+/*banner*/
+.banner {
+  position: relative;
+  height: 300px;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner__title {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  text-shadow: 0 2px 2 red;
+}
+
+.banner-2 {
+  background-image: url(https://th.bing.com/th/id/R.a0a32a4e8e9fbdd6335c97a2e4951882?rik=uN6SfG62fcInpA&riu=http%3a%2f%2fcacnuoc.vn%2fwp-content%2fuploads%2f2016%2f07%2flondon-anh.jpg&ehk=NmXwAeysecHHXFR3ucNeyEc%2fuw7U76qArTYsJFKiL0I%3d&risl=&pid=ImgRaw&r=0);
+  position: relative;
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-2__title {
+  position: relative;
+}
+/*nav*/
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  height: 50px;
+}
+nav > * {
+  flex: 1;
+  text-align: center;
+  height: 100%;
+  background-color: yellowgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+nav > *:hover {
+  background-color: blue;
+  color: white;
+}
+.nav-brand {
+  flex: 2 !important;
+  position: relative;
+}
+/*End header*/
+
+/*main*/
+
+/*----hobby---*/
+#hobby .content {
+  display: flex;
+}
+#hobby .content div {
+  text-align: center;
+  flex: 1;
+  white-space: nowrap;
+  margin: 10px;
+}
+#hobby .content div i {
+  color: var(--color-primary);
+  display: inline-block;
+  width: 100%;
+  flex: 1;
+  padding-bottom: 2px;
+  padding-left: -20px;
+  font-size: 1.5em;
+  border: 1px solid blue;
+  border-radius: 50%;
+}
+/*certificate*/
+
+#certificate .section-content {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.card {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+.card--img {
+  flex: 0.35;
+  object-fit: contain;
+}
+.card--text {
+  flex: 0.7;
+}
+.card h4 {
+  font-weight: 500;
+}
+#experience,
+#skills,
+#language {
+  padding: 20px;
+  border: 2px solid gray;
+}
+#hocvan,
+#hoatdong,
+#hobby {
+  padding: 20px;
+  border: 2px solid grey;
+}
+#hocvan .section-content,
+#hoatdong .section-content,
+#hobby .section-content,
+#experience .section-content,
+#skills .section-content,
+#language .section-content {
+  display: none;
+}
+
+/*project*/
+.section-title {
+  margin-right: 80%;
+}
+
+.project-image img {
+  width: 150px;
+}
+.project-content {
+  padding: 20px;
+  font-size: 15px;
+}
+.time-border {
+  border-top: 1px solid black;
+}
+table {
+  border-top: 1px solid black;
+}
+.project-item {
+  border: 1px solid black;
+
+  margin: 10px;
+  margin-top: 50px;
+}
+.project-wrapper {
+  flex-direction: column;
+}
+
+.container-row {
+  display: flex;
+}
+#contact .section-content {
+  display: flex;
+  margin: 10px;
+  font-size: 30px;
+  justify-content: center;
+}
+#contact a {
+  margin: 0 50px;
+}
